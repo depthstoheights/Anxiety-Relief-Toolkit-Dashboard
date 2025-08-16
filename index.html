@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety Relief Toolkit - Depths to Heights</title>
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiQW54aWV0eSBSZWxpZWYgVG9vbGtpdCAtIERlcHRocyB0byBIZWlnaHRzIiwic2hvcnRfbmFtZSI6IkFueGlldHkgUmVsaWVmIiwic3RhcnRfdXJsIjoiLiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmNGY3ZmEiLCJ0aGVtZV9jb2xvciI6IiM0ZWNkYzQiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lpSUhacFpYZENiM2c5SWpBZ01DQXhNamdnTVRJNElpQjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaVBnbzhZMmx5WTJ4bElHTjRQU0kyTkNJZ1kzazlJalk0SWlCeVBTSXlOQ0lnWm1sc2JEMGlJelEwUXpsaU9TSXZQZ284ZEdWNGRDQjRQU0kyTkNJZ2VUMGlOemNpSUhSbGVIUXRZVzVqYUc5eVBTSnRhV1JrYkdVaUlHWnZiblF0YzJsNlpUMGlNVFlpSUdacGJHdzlJaU5tWm1aaVptWWlQam9xUEM5MFpYaDBQand2YzNabksiLCJzaXplcyI6IjEyOHgxMjgiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9XX0=">
+    <style>
+        :root {
+            --primary-color: #4ecdc4;
+            --secondary-color: #44a08d;
+            --accent-color: #667eea;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --danger-color: #e74c3c;
+            --text-color: #2c3e50;
+            --light-text: #7f8c8d;
+            --background: #f8fffe;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --border-radius: 12px;
+            --transition: all 0.25s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 16px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body.dyslexia-friendly {
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 0.12em;
+            word-spacing: 0.16em;
+            line-height: 1.8;
+        }
+
+        body.high-contrast {
+            --primary-color: #006666;
+            --secondary-color: #004444;
+            --text-color: #000000;
+            --background: #ffffff;
+            --white: #f0f0f0;
+        }
+
+        body.large-text { font-size: 20px; }
+        body.extra-large-text { font-size: 24px; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+            margin-bottom: 15px;
+        }
+
+        .verse-highlight {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid white;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .verse-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .verse-ref {
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .accessibility-bar {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .accessibility-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .accessibility-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-1px);
+        }
+
+        .accessibility-btn.active {
+            background: var(--accent-color);
+        }
+
+        .intensity-selector {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .intensity-title {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .intensity-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .intensity-btn {
+            padding: 12px 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: bold;
+            min-width: 120px;
+        }
+
+        .intensity-btn:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .intensity-btn.active {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .tool-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .tool-header {
+            padding: 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .tool-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .tool-subtitle {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .tool-content {
+            padding: 25px;
+        }
+
+        .tool-verse {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+            font-style: italic;
+            text-align: center;
+        }
+
+        .tool-verse-text {
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .tool-verse-ref {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        .start-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .exercise-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .exercise-modal.show {
+            display: flex;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .exercise-content {
+            background: white;
+            border-radius: var(--border-radius);
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalSlideIn 0.3s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from { transform: scale(0.9) translateY(50px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+
+        .exercise-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .close-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+
+        .exercise-body {
+            padding: 30px;
+        }
+
+        .breathing-circle {
+            width: 200px;
+            height: 200px;
+            border: 4px solid var(--primary-color);
+            border-radius: 50%;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(68, 160, 141, 0.1));
+        }
+
+        .breathing-circle.inhale {
+            animation: breatheIn 4s ease-in-out;
+        }
+
+        .breathing-circle.exhale {
+            animation: breatheOut 6s ease-in-out;
+        }
+
+        .breathing-circle.hold {
+            animation: breatheHold 2s ease-in-out;
+        }
+
+        @keyframes breatheIn {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.3); }
+        }
+
+        @keyframes breatheOut {
+            0% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes breatheHold {
+            0%, 100% { transform: scale(1.3); }
+        }
+
+        .breathing-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .breathing-instruction {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: var(--text-color);
+        }
+
+        .grounding-checklist {
+            margin: 20px 0;
+        }
+
+        .grounding-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            background: var(--background);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .grounding-item:hover {
+            background: rgba(78, 205, 196, 0.1);
+            transform: translateX(5px);
+        }
+
+        .grounding-item.completed {
+            background: rgba(39, 174, 96, 0.1);
+            border-left-color: var(--success-color);
+        }
+
+        .grounding-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary-color);
+            border-radius: 4px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .grounding-item.completed .grounding-checkbox {
+            background: var(--success-color);
+            border-color: var(--success-color);
+            color: white;
+        }
+
+        .crisis-alert {
+            background: linear-gradient(135deg, #fee, #fdd);
+            border: 2px solid var(--danger-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .crisis-alert h3 {
+            color: var(--danger-color);
+            margin-bottom: 10px;
+        }
+
+        .emergency-number {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--danger-color);
+            margin: 10px 0;
+        }
+
+        .share-buttons {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .share-btn {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px;
+            transition: var(--transition);
+            font-weight: bold;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            line-height: 1.8;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .disclaimer {
+            background: rgba(255,255,255,0.1);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 20px 0;
+            color: white;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .hidden { display: none; }
+
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            .header h1 { font-size: 2.2rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+            .intensity-buttons { flex-direction: column; align-items: center; }
+            .breathing-circle { width: 150px; height: 150px; }
+        }
+
+        button:focus, .tool-card:focus, .grounding-item:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🕊️ Anxiety Relief Toolkit</h1>
+            <p>Immediate biblical comfort and practical tools for anxious moments</p>
+            
+            <div class="verse-highlight">
+                <div class="verse-text">
+                    "Cast all your anxiety on him because he cares for you."
+                </div>
+                <div class="verse-ref">— 1 Peter 5:7</div>
+            </div>
+        </header>
+
+        <div class="accessibility-bar">
+            <button class="accessibility-btn" onclick="toggleDyslexiaFont()" id="dyslexiaBtn">
+                📖 Dyslexia-Friendly
+            </button>
+            <button class="accessibility-btn" onclick="toggleHighContrast()" id="contrastBtn">
+                🎨 High Contrast
+            </button>
+            <button class="accessibility-btn" onclick="increaseTextSize()" id="textSizeBtn">
+                🔍 Text Size: Normal
+            </button>
+        </div>
+
+        <div class="disclaimer">
+            <strong>Important:</strong> These tools provide spiritual comfort and practical anxiety relief techniques, not professional medical advice. If you're experiencing severe anxiety or panic, please consult a healthcare provider.
+        </div>
+
+        <div class="intensity-selector">
+            <div class="intensity-title">How intense is your anxiety right now?</div>
+            <div class="intensity-buttons">
+                <button class="intensity-btn active" data-level="mild" onclick="selectIntensity('mild')">
+                    😟 Mild<br><small>Worried thoughts</small>
+                </button>
+                <button class="intensity-btn" data-level="moderate" onclick="selectIntensity('moderate')">
+                    😰 Moderate<br><small>Racing heart</small>
+                </button>
+                <button class="intensity-btn" data-level="severe" onclick="selectIntensity('severe')">
+                    😱 Severe<br><small>Panic symptoms</small>
+                </button>
+                <button class="intensity-btn" data-level="crisis" onclick="selectIntensity('crisis')">
+                    🆘 Crisis<br><small>Overwhelming panic</small>
+                </button>
+            </div>
+        </div>
+
+        <div class="crisis-alert hidden" id="crisisAlert">
+            <h3>🆘 Immediate Help Available</h3>
+            <p>If you're experiencing severe panic or thoughts of self-harm:</p>
+            <div class="emergency-number">🇺🇸 Call or Text 988 (Crisis Lifeline)</div>
+            <p>Outside the US: Use your local emergency number</p>
+            <p><strong>You're not alone. Help is available. This feeling will pass.</strong></p>
+        </div>
+
+        <main class="tools-grid" id="toolsGrid">
+            <!-- Tools will be dynamically loaded -->
+        </main>
+
+        <div class="share-buttons">
+            <button class="share-btn" onclick="shareToolkit()">📤 Share This Toolkit</button>
+            <button class="share-btn" onclick="bookmarkPage()">🔖 Bookmark for Quick Access</button>
+        </div>
+
+        <footer class="footer">
+            <p><strong>Free to use.</strong> If this encouraged you, feel free to <a href="https://www.paypal.com/donate/?hosted_button_id=8GRE7B8C3TP2U" target="_blank">buy me a coffee</a>.</p>
+            <br>
+            <p><strong>Depths to Heights</strong></p>
+            <p><a href="https://depthstoheights.org" target="_blank">depthstoheights.org</a></p>
+            <p><a href="mailto:depthstoheights@gmail.com">depthstoheights@gmail.com</a></p>
+            <p><strong>Made by Justin</strong></p>
+        </footer>
+    </div>
+
+    <!-- Exercise Modal -->
+    <div class="exercise-modal" id="exerciseModal">
+        <div class="exercise-content">
+            <div class="exercise-header">
+                <button class="close-btn" onclick="closeModal()" aria-label="Close exercise">&times;</button>
+                <h2 id="modalTitle">Exercise</h2>
+                <p id="modalSubtitle">Find peace in God's presence</p>
+            </div>
+            <div class="exercise-body" id="modalBody">
+                <!-- Exercise content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentIntensity = 'mild';
+        let textSizeLevel = 0;
+
+        const anxietyTools = {
+            mild: [
+                {
+                    id: 'breath-prayer',
+                    icon: '🫁',
+                    title: 'Breath Prayer',
+                    subtitle: 'Breathe with God\'s peace',
+                    verse: { text: 'Be still, and know that I am God.', ref: 'Psalm 46:10' },
+                    description: 'Combine slow breathing with prayer to calm your mind and connect with God\'s presence.'
+                },
+                {
+                    id: 'gratitude-grounding',
+                    icon: '🙏',
+                    title: 'Gratitude Grounding',
+                    subtitle: 'Count God\'s blessings',
+                    verse: { text: 'Give thanks in all circumstances; for this is God\'s will for you in Christ Jesus.', ref: '1 Thessalonians 5:18' },
+                    description: 'Ground yourself by focusing on God\'s goodness and specific blessings in your life.'
+                },
+                {
+                    id: 'scripture-meditation',
+                    icon: '📖',
+                    title: 'Scripture Meditation',
+                    subtitle: 'Let God\'s Word calm you',
+                    verse: { text: 'Your word is a lamp for my feet, a light on my path.', ref: 'Psalm 119:105' },
+                    description: 'Meditate on calming Bible verses to replace anxious thoughts with God\'s truth.'
+                }
+            ],
+            moderate: [
+                {
+                    id: 'biblical-breathing',
+                    icon: '🌬️',
+                    title: 'Biblical Breathing (4-7-8)',
+                    subtitle: 'Breathe in God\'s peace',
+                    verse: { text: 'Then he breathed on them and said, "Receive the Holy Spirit."', ref: 'John 20:22' },
+                    description: 'Use the 4-7-8 breathing technique while focusing on God\'s spirit within you.'
+                },
+                {
+                    id: 'jesus-grounding',
+                    icon: '✝️',
+                    title: 'Jesus Grounding (5-4-3-2-1)',
+                    subtitle: 'Ground yourself in Christ',
+                    verse: { text: 'When anxiety was great within me, your consolation brought me joy.', ref: 'Psalm 94:19' },
+                    description: 'Use the 5-4-3-2-1 grounding technique while focusing on Jesus\' presence.'
+                }
+            ],
+            severe: [
+                {
+                    id: 'emergency-breathing',
+                    icon: '🚨',
+                    title: 'Emergency Breath Prayer',
+                    subtitle: 'Immediate calming technique',
+                    verse: { text: 'God is our refuge and strength, an ever-present help in trouble.', ref: 'Psalm 46:1' },
+                    description: 'Rapid breathing technique combined with short, powerful prayers for immediate relief.'
+                },
+                {
+                    id: 'panic-protocol',
+                    icon: '🛡️',
+                    title: 'Panic Attack Protocol',
+                    subtitle: 'Step-by-step panic relief',
+                    verse: { text: 'When I am afraid, I put my trust in you.', ref: 'Psalm 56:3' },
+                    description: 'Biblical and practical steps to manage panic attacks with God\'s help.'
+                }
+            ],
+            crisis: [
+                {
+                    id: 'immediate-calm',
+                    icon: '🆘',
+                    title: 'Immediate Calm Protocol',
+                    subtitle: 'Emergency spiritual anchoring',
+                    verse: { text: 'The Lord your God is with you, the Mighty Warrior who saves.', ref: 'Zephaniah 3:17' },
+                    description: 'Rapid intervention technique combining breathing, grounding, and spiritual truth.'
+                }
+            ]
+        };
+
+        function initializeApp() {
+            loadAccessibilityPreferences();
+            selectIntensity('mild');
+        }
+
+        function selectIntensity(level) {
+            currentIntensity = level;
+            
+            document.querySelectorAll('.intensity-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.querySelector(`[data-level="${level}"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            const crisisAlert = document.getElementById('crisisAlert');
+            if (level === 'crisis' || level === 'severe') {
+                crisisAlert.classList.remove('hidden');
+            } else {
+                crisisAlert.classList.add('hidden');
+            }
+            
+            loadTools(level);
+        }
+
+        function loadTools(intensity) {
+            const toolsGrid = document.getElementById('toolsGrid');
+            const tools = anxietyTools[intensity] || anxietyTools.mild;
+            
+            toolsGrid.innerHTML = tools.map(tool => `
+                <div class="tool-card" tabindex="0" onclick="startExercise('${tool.id}')">
+                    <div class="tool-header">
+                        <span class="tool-icon">${tool.icon}</span>
+                        <div class="tool-title">${tool.title}</div>
+                        <div class="tool-subtitle">${tool.subtitle}</div>
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-verse">
+                            <div class="tool-verse-text">"${tool.verse.text}"</div>
+                            <div class="tool-verse-ref">— ${tool.verse.ref}</div>
+                        </div>
+                        <p>${tool.description}</p>
+                        <button class="start-btn">Start ${tool.title}</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function startExercise(exerciseId) {
+            const exercises = {
+                'breath-prayer': () => startBreathPrayer(),
+                'biblical-breathing': () => startBiblicalBreathing(),
+                'emergency-breathing': () => startEmergencyBreathing(),
+                'gratitude-grounding': () => startGratitudeGrounding(),
+                'jesus-grounding': () => startJesusGrounding(),
+                'scripture-meditation': () => startScripturemeditation(),
+                'panic-protocol': () => startPanicProtocol(),
+                'immediate-calm': () => startImmediateCalm()
+            };
+
+            const exercise = exercises[exerciseId];
+            if (exercise) {
+                exercise();
+                document.getElementById('exerciseModal').classList.add('show');
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('exerciseModal').classList.remove('show');
+        }
+
+        function startBreathPrayer() {
+            document.getElementById('modalTitle').textContent = 'Breath Prayer';
+            document.getElementById('modalSubtitle').textContent = 'Breathe with God\'s peace';
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"Be still, and know that I am God."</div>
+                    <div class="tool-verse-ref">— Psalm 46:10</div>
+                </div>
+                <div class="breathing-circle">
+                    <div class="breathing-text" id="breathingText">Get Ready</div>
+                </div>
+                <div class="breathing-instruction" id="breathingInstruction">
+                    Prepare to breathe slowly with these holy words
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="start-btn" onclick="startBreathingCycle()" style="width: auto; padding: 12px 25px;">
+                        Begin Breath Prayer
+                    </button>
+                </div>
+                <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #4ecdc4; margin-bottom: 15px;">How This Works:</h4>
+                    <p><strong>Inhale (4 seconds):</strong> "God is with me"</p>
+                    <p><strong>Hold (2 seconds):</strong> "I am safe"</p>
+                    <p><strong>Exhale (6 seconds):</strong> "I release my worries to You"</p>
+                </div>
+            `;
+        }
+
+        function startBreathingCycle() {
+            const text = document.getElementById('breathingText');
+            const instruction = document.getElementById('breathingInstruction');
+            
+            let cycle = 0;
+            
+            function runCycle() {
+                if (cycle >= 6) {
+                    text.textContent = 'Complete';
+                    instruction.textContent = 'You have breathed with God. Peace be with you.';
+                    return;
+                }
+                
+                text.textContent = 'Breathe In';
+                instruction.textContent = '"God is with me"';
+                
+                setTimeout(() => {
+                    text.textContent = 'Hold';
+                    instruction.textContent = '"I am safe"';
+                }, 4000);
+                
+                setTimeout(() => {
+                    text.textContent = 'Breathe Out';
+                    instruction.textContent = '"I release my worries to You"';
+                }, 6000);
+                
+                setTimeout(() => {
+                    cycle++;
+                    runCycle();
+                }, 12000);
+            }
+            
+            runCycle();
+        }
+
+        function startBiblicalBreathing() {
+            document.getElementById('modalTitle').textContent = 'Biblical Breathing (4-7-8)';
+            document.getElementById('modalSubtitle').textContent = 'Breathe in the Holy Spirit';
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"Then he breathed on them and said, 'Receive the Holy Spirit.'"</div>
+                    <div class="tool-verse-ref">— John 20:22</div>
+                </div>
+                <div class="breathing-circle">
+                    <div class="breathing-text">Ready</div>
+                </div>
+                <div class="breathing-instruction">
+                    Ready to receive God's peace through the power of the Holy Spirit
+                </div>
+                <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #4ecdc4; margin-bottom: 15px;">The 4-7-8 Technique:</h4>
+                    <p><strong>Inhale (4 counts):</strong> "Holy Spirit, fill me"</p>
+                    <p><strong>Hold (7 counts):</strong> "Your peace dwells within me"</p>
+                    <p><strong>Exhale (8 counts):</strong> "Anxiety leaves, peace remains"</p>
+                </div>
+            `;
+        }
+
+        function startEmergencyBreathing() {
+            document.getElementById('modalTitle').textContent = 'Emergency Breath Prayer';
+            document.getElementById('modalSubtitle').textContent = 'God is your refuge right now';
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"God is our refuge and strength, an ever-present help in trouble."</div>
+                    <div class="tool-verse-ref">— Psalm 46:1</div>
+                </div>
+                <div class="breathing-circle">
+                    <div class="breathing-text">You're Safe</div>
+                </div>
+                <div class="breathing-instruction">
+                    God is with you in this moment. You are not alone.
+                </div>
+                <div style="margin-top: 20px; padding: 20px; background: #fee; border: 2px solid #e74c3c; border-radius: 8px;">
+                    <h4 style="color: #e74c3c; margin-bottom: 10px;">🆘 Emergency Protocol:</h4>
+                    <p><strong>Breathe slowly and repeat:</strong></p>
+                    <p>"God, I need You now"</p>
+                    <p>"You are my safe place"</p>
+                    <p>"This feeling will pass"</p>
+                    <p style="margin-top: 15px; font-weight: bold;">If symptoms persist, call 988 or emergency services.</p>
+                </div>
+            `;
+        }
+
+        function startGratitudeGrounding() {
+            document.getElementById('modalTitle').textContent = 'Gratitude Grounding';
+            document.getElementById('modalSubtitle').textContent = 'Count God\'s blessings';
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"Give thanks in all circumstances; for this is God's will for you in Christ Jesus."</div>
+                    <div class="tool-verse-ref">— 1 Thessalonians 5:18</div>
+                </div>
+                <div style="margin: 30px 0;">
+                    <h3 style="color: #4ecdc4; text-align: center; margin-bottom: 20px;">
+                        Name God's Blessings Around You
+                    </h3>
+                    <div class="grounding-checklist">
+                        <div class="grounding-item" onclick="toggleGratitudeItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>5 things you can see that God created or provided</strong></div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGratitudeItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>4 things you can touch that bring comfort</strong></div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGratitudeItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>3 sounds that remind you of God's goodness</strong></div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGratitudeItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>2 scents that bring pleasant memories</strong></div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGratitudeItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>1 taste you're grateful for today</strong></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function startJesusGrounding() {
+            document.getElementById('modalTitle').textContent = 'Jesus Grounding (5-4-3-2-1)';
+            document.getElementById('modalSubtitle').textContent = 'Ground yourself in Christ';
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"When anxiety was great within me, your consolation brought me joy."</div>
+                    <div class="tool-verse-ref">— Psalm 94:19</div>
+                </div>
+                <div style="margin: 30px 0;">
+                    <h3 style="color: #4ecdc4; text-align: center; margin-bottom: 20px;">
+                        Ground Yourself in Jesus' Presence
+                    </h3>
+                    <div class="grounding-checklist">
+                        <div class="grounding-item" onclick="toggleGroundingItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>5 things you can see</strong> - remember Jesus sees them too</div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGroundingItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>4 things you can touch</strong> - feel Jesus' creation</div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGroundingItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>3 things you can hear</strong> - listen for God's peace</div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGroundingItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>2 things you can smell</strong> - breathe in God's goodness</div>
+                        </div>
+                        <div class="grounding-item" onclick="toggleGroundingItem(this)">
+                            <div class="grounding-checkbox"></div>
+                            <div><strong>1 thing you can taste</strong> - savor God's provision</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function startScripturemeditation() {
+            document.getElementById('modalTitle').textContent = 'Scripture Meditation';
+            document.getElementById('modalSubtitle').textContent = 'Let God\'s Word calm your spirit';
+            
+            const verses = [
+                { text: "Peace I leave with you; my peace I give you. I do not give to you as the world gives.", ref: "John 14:27" },
+                { text: "You will keep in perfect peace those whose minds are steadfast, because they trust in you.", ref: "Isaiah 26:3" }
+            ];
+            
+            const verse = verses[Math.floor(Math.random() * verses.length)];
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"Your word is a lamp for my feet, a light on my path."</div>
+                    <div class="tool-verse-ref">— Psalm 119:105</div>
+                </div>
+                <div style="margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px;">
+                    <div style="font-size: 1.3rem; font-style: italic; margin-bottom: 15px; text-align: center;">
+                        "${verse.text}"
+                    </div>
+                    <div style="font-weight: bold; color: #4ecdc4; text-align: center;">
+                        — ${verse.ref}
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <p>Read this verse slowly three times. Let each word sink into your heart.</p>
+                </div>
+            `;
+        }
+
+        function startPanicProtocol() {
+            document.getElementById('modalTitle').textContent = 'Panic Attack Protocol';
+            document.getElementById('modalSubtitle').textContent = 'God is your strength';
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"When I am afraid, I put my trust in you."</div>
+                    <div class="tool-verse-ref">— Psalm 56:3</div>
+                </div>
+                <div style="background: #fee; border: 2px solid #e74c3c; border-radius: 8px; padding: 15px; text-align: center; margin: 20px 0;">
+                    <h4 style="color: #e74c3c;">Remember: This panic will pass. You are safe with God.</h4>
+                </div>
+                <div style="margin: 20px 0;">
+                    <p><strong>1. STOP and say:</strong> "I'm having a panic attack, but God is with me."</p>
+                    <p><strong>2. BREATHE:</strong> Inhale "Jesus, help me" - Exhale "I am safe in You"</p>
+                    <p><strong>3. GROUND:</strong> Name 5 things you see, 4 you feel, 3 you hear</p>
+                    <p><strong>4. SPEAK:</strong> "God has not given me a spirit of fear" (2 Timothy 1:7)</p>
+                    <p><strong>5. STAY:</strong> Let the panic pass while holding onto God's presence</p>
+                </div>
+            `;
+        }
+
+        function startImmediateCalm() {
+            document.getElementById('modalTitle').textContent = 'Immediate Calm Protocol';
+            document.getElementById('modalSubtitle').textContent = 'Emergency spiritual anchoring';
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="tool-verse">
+                    <div class="tool-verse-text">"The Lord your God is with you, the Mighty Warrior who saves."</div>
+                    <div class="tool-verse-ref">— Zephaniah 3:17</div>
+                </div>
+                <div style="background: #fee; border: 2px solid #e74c3c; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+                    <h3 style="color: #e74c3c;">🆘 CRISIS INTERVENTION</h3>
+                    <p style="font-weight: bold;">You are in a safe place. God is with you. This will pass.</p>
+                </div>
+                <div style="margin: 20px 0;">
+                    <p><strong>RIGHT NOW:</strong></p>
+                    <p>1. Say: "God, I need You NOW"</p>
+                    <p>2. Breathe deeply and slowly</p>
+                    <p>3. Feel your feet on the ground</p>
+                    <p>4. Say: "God is my safe place"</p>
+                    <p style="margin-top: 20px; color: #e74c3c; font-weight: bold;">Crisis Hotline: 988</p>
+                </div>
+            `;
+        }
+
+        function toggleGroundingItem(element) {
+            element.classList.toggle('completed');
+            const checkbox = element.querySelector('.grounding-checkbox');
+            checkbox.innerHTML = element.classList.contains('completed') ? '✓' : '';
+        }
+
+        function toggleGratitudeItem(element) {
+            element.classList.toggle('completed');
+            const checkbox = element.querySelector('.grounding-checkbox');
+            checkbox.innerHTML = element.classList.contains('completed') ? '🙏' : '';
+        }
+
+        async function shareToolkit() {
+            const shareData = {
+                title: 'Anxiety Relief Toolkit - Biblical Comfort & Practical Tools',
+                text: 'I found this helpful biblical anxiety relief toolkit with breathing exercises and grounding techniques.',
+                url: window.location.href
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else {
+                    const url = encodeURIComponent(shareData.url);
+                    const text = encodeURIComponent(shareData.text);
+                    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+                }
+            } catch (error) {
+                console.log('Error sharing:', error);
+            }
+        }
+
+        function bookmarkPage() {
+            alert('Please bookmark this page using Ctrl+D (PC) or Cmd+D (Mac) for quick access during anxious moments.');
+        }
+
+        function toggleDyslexiaFont() {
+            document.body.classList.toggle('dyslexia-friendly');
+            const btn = document.getElementById('dyslexiaBtn');
+            btn.classList.toggle('active');
+            localStorage.setItem('dyslexiaFriendly', document.body.classList.contains('dyslexia-friendly'));
+        }
+
+        function toggleHighContrast() {
+            document.body.classList.toggle('high-contrast');
+            const btn = document.getElementById('contrastBtn');
+            btn.classList.toggle('active');
+            localStorage.setItem('highContrast', document.body.classList.contains('high-contrast'));
+        }
+
+        function increaseTextSize() {
+            const textSizes = ['Normal', 'Large', 'Extra Large'];
+            const classes = ['', 'large-text', 'extra-large-text'];
+            
+            document.body.classList.remove('large-text', 'extra-large-text');
+            textSizeLevel = (textSizeLevel + 1) % 3;
+            
+            if (textSizeLevel > 0) {
+                document.body.classList.add(classes[textSizeLevel]);
+            }
+            
+            document.getElementById('textSizeBtn').textContent = `🔍 Text Size: ${textSizes[textSizeLevel]}`;
+            localStorage.setItem('textSizeLevel', textSizeLevel);
+        }
+
+        function loadAccessibilityPreferences() {
+            if (localStorage.getItem('dyslexiaFriendly') === 'true') {
+                document.body.classList.add('dyslexia-friendly');
+                document.getElementById('dyslexiaBtn').classList.add('active');
+            }
+            
+            if (localStorage.getItem('highContrast') === 'true') {
+                document.body.classList.add('high-contrast');
+                document.getElementById('contrastBtn').classList.add('active');
+            }
+            
+            const savedTextSize = parseInt(localStorage.getItem('textSizeLevel') || '0');
+            textSizeLevel = savedTextSize;
+            const textSizes = ['Normal', 'Large', 'Extra Large'];
+            const classes = ['', 'large-text', 'extra-large-text'];
+            
+            if (textSizeLevel > 0) {
+                document.body.classList.add(classes[textSizeLevel]);
+            }
+            
+            document.getElementById('textSizeBtn').textContent = `🔍 Text Size: ${textSizes[textSizeLevel]}`;
+        }
+
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    </script>
+</body>
+</html>
